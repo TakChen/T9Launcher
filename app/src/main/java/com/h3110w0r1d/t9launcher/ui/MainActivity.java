@@ -109,14 +109,14 @@ public class MainActivity extends AppCompatActivity{
 				int id = view.getId();
 				if(id == R.id.t9btn_0) searchText.append("0");
 				else if(id == R.id.t9btn_1) searchText.append("1");
-				else if(id == R.id.t9btn_2) searchText.append("2");
-				else if(id == R.id.t9btn_3) searchText.append("3");
-				else if(id == R.id.t9btn_4) searchText.append("4");
-				else if(id == R.id.t9btn_5) searchText.append("5");
-				else if(id == R.id.t9btn_6) searchText.append("6");
-				else if(id == R.id.t9btn_7) searchText.append("7");
-				else if(id == R.id.t9btn_8) searchText.append("8");
-				else if(id == R.id.t9btn_9) searchText.append("9");
+				else if(id == R.id.t9btn_2_container) searchText.append("2");
+				else if(id == R.id.t9btn_3_container) searchText.append("3");
+				else if(id == R.id.t9btn_4_container) searchText.append("4");
+				else if(id == R.id.t9btn_5_container) searchText.append("5");
+				else if(id == R.id.t9btn_6_container) searchText.append("6");
+				else if(id == R.id.t9btn_7_container) searchText.append("7");
+				else if(id == R.id.t9btn_8_container) searchText.append("8");
+				else if(id == R.id.t9btn_9_container) searchText.append("9");
 				appViewModel.searchApp(searchText.getText().toString());
 			}
 			return false;
@@ -130,25 +130,29 @@ public class MainActivity extends AppCompatActivity{
 
 		findViewById(R.id.t9btn_0).setOnTouchListener(t9btnTouch);
 		findViewById(R.id.t9btn_1).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_2).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_3).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_4).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_5).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_6).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_7).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_8).setOnTouchListener(t9btnTouch);
-		findViewById(R.id.t9btn_9).setOnTouchListener(t9btnTouch);
+		
+		// 为新的容器布局添加监听器
+		findViewById(R.id.t9btn_2_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_3_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_4_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_5_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_6_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_7_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_8_container).setOnTouchListener(t9btnTouch);
+		findViewById(R.id.t9btn_9_container).setOnTouchListener(t9btnTouch);
 
 		findViewById(R.id.t9btn_0).setOnLongClickListener(t9btnLongClick);
 		findViewById(R.id.t9btn_1).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_2).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_3).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_4).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_5).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_6).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_7).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_8).setOnLongClickListener(t9btnLongClick);
-		findViewById(R.id.t9btn_9).setOnLongClickListener(t9btnLongClick);
+		
+		// 为新的容器布局添加长按监听器
+		findViewById(R.id.t9btn_2_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_3_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_4_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_5_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_6_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_7_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_8_container).setOnLongClickListener(t9btnLongClick);
+		findViewById(R.id.t9btn_9_container).setOnLongClickListener(t9btnLongClick);
 
 		
 		Button clear = findViewById(R.id.t9btn_clear);
