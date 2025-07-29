@@ -53,7 +53,13 @@ public class MainActivity extends AppCompatActivity{
 			public void onItemClick(View v, AppInfo app){
 				if (app.Start(getApplicationContext())){
 					appViewModel.UpdateStartCount(app);
-					clearSearchAndBack();
+					// 如果是第一次启动该应用，就只清理搜索结果
+					if (app.getStartCount() != 1) {
+						clearSearchAndBack();
+					} else {
+						searchText.setText("");
+						appViewModel.searchApp("");
+					}
 				}
 			}
 			
