@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/RLMain">
-    
+
     <androidx.cardview.widget.CardView
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
@@ -12,18 +12,19 @@
         android:clickable="true"
         android:layout_marginBottom="-20dp"
         app:cardCornerRadius="20dp">
-        
+
         <LinearLayout
             android:id="@+id/ll_parent"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <ProgressBar
-                android:layout_width="match_parent"
                 android:id="@+id/loading"
-                android:padding="90dp"
-                android:layout_height="210dp" />
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:padding="90dp" />
             <com.h3110w0r1d.t9launcher.widgets.GSwipeRefreshLayout
                 android:visibility="gone"
                 android:id="@+id/swipeRefreshLayout"
@@ -49,66 +50,219 @@
                 android:focusable="false"
                 android:textAlignment="center"
                 android:textSize="20sp" />
-            
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:orientation="vertical"
                 android:paddingBottom="20dp"
                 android:paddingHorizontal="30dp" >
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/t9btn_1"
+                        style="@style/T9ButtonStyle"
+                        android:text="1" />
                     
-                    <Button android:text="1" android:id="@+id/t9btn_1" style="@style/T9ButtonStyle"/>
-                    <Button android:text="2" android:id="@+id/t9btn_2" style="@style/T9ButtonStyle"/>
-                    <Button android:text="3" android:id="@+id/t9btn_3" style="@style/T9ButtonStyle"/>
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_2_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="2"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="ABC"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
                     
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_3_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="DEF"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
+
                 </LinearLayout>
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_4_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="4"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="GHI"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
                     
-                    <Button android:text="4" android:id="@+id/t9btn_4" style="@style/T9ButtonStyle"/>
-                    <Button android:text="5" android:id="@+id/t9btn_5" style="@style/T9ButtonStyle"/>
-                    <Button android:text="6" android:id="@+id/t9btn_6" style="@style/T9ButtonStyle"/>
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_5_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="JKL"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
                     
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_6_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="6"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="MNO"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
+
                 </LinearLayout>
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_7_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="PQRS"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
                     
-                    <Button android:text="7" android:id="@+id/t9btn_7" style="@style/T9ButtonStyle"/>
-                    <Button android:text="8" android:id="@+id/t9btn_8" style="@style/T9ButtonStyle"/>
-                    <Button android:text="9" android:id="@+id/t9btn_9" style="@style/T9ButtonStyle"/>
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_8_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="8"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="TUV"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
                     
+                    <LinearLayout
+                        style="@style/T9ButtonStyle"
+                        android:orientation="vertical"
+                        android:id="@+id/t9btn_9_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="9"
+                            android:textSize="24sp"
+                            android:gravity="center|bottom"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="WXYZ"
+                            android:textSize="10sp"
+                            android:gravity="center|top"/>
+                    </LinearLayout>
+
                 </LinearLayout>
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
-                    
+
                     <Button android:text="@string/setting" android:id="@+id/t9btn_setting" android:textSize="15sp" style="@style/T9ButtonStyle"/>
                     <Button android:text="0" android:id="@+id/t9btn_0" style="@style/T9ButtonStyle"/>
                     <Button android:text="@string/clear" android:id="@+id/t9btn_clear" android:textSize="15sp" style="@style/T9ButtonStyle"/>
-                
+
                 </LinearLayout>
-                
+
             </LinearLayout>
-            
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-    
+
 </RelativeLayout>
