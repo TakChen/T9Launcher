@@ -20,13 +20,16 @@ android {
             keyPassword keystoreProperties['KEY_PWD']
         }
     }
+    buildFeatures {
+        buildConfig true
+    }
     namespace 'com.h3110w0r1d.t9launcher'
-    compileSdk 33
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.h3110w0r1d.t9launcher"
-        minSdk 26
-        targetSdk 33
+        minSdk 34
+        targetSdk 34
         versionCode 4
         versionName "1.2.0"
     }
@@ -38,12 +41,12 @@ android {
             signingConfig signingConfigs.release
         }
         debug {
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
